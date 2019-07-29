@@ -1,7 +1,11 @@
 module.exports = {
   theme: {
-    extend: {}
-  },
-  variants: {},
-  plugins: []
+    extend: {},
+    fontFamily: {
+      'default': ['Roboto', 'sans-serif', 'serif'],
+      'logo': ['Pacifico', 'Roboto', 'sans-serif', 'serif'],
+    },
+    variants: {},
+    plugins: []
+  }
 }
