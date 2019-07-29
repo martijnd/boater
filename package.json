@@ -5,10 +5,12 @@
     "ng": "ng",
     "start": "ng serve & ngtw watch",
     "build": "ngtw build && ng build",
+    "build-ci": "ngtw build && --prod --base-href https://martijnd.github.io/boater/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prestart": "ngtw build"
+    "prestart": "ngtw build",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless"
   },
   "private": true,
   "dependencies": {
