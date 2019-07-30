@@ -1,9 +1,40 @@
-<div class="container flex justify-center m-6">
-  <div class="bg-white rounded-lg shadow w-full p-4">
-    <h2 class="font-medium text-lg antialiased">It was never so easy.</h2>
-    <label class="block">
-      <span class="text-gray-700">Name</span>
-      <input class="form-input mt-1 block w-full" placeholder="Jane Doe">
+<div class="flex justify-center">
+  <div class="bg-white rounded-lg shadow w-full p-6">
+    <h2 class="font-medium text-xl antialiased">It was never so easy.</h2>
+    <label class="block mt-6">
+      <span class="text-gray-700 uppercase text-xs">Where</span>
+      <select class="mt-1 form-select text-gray-700 block w-full">
+        <option disabled selected>Select a harbor...</option>
+        <option *ngFor="let harbor of harbors" [value]="harbor.id">{{ harbor.name }}</option>
+      </select>
     </label>
+
+    <div class="flex">
+      <label class="mt-3 w-1/2">
+        <span class="text-gray-700 uppercase text-xs">Arrival</span>
+        <input class="form-input mt-1 block w-full text-gray-700 rounded-r-none" placeholder="dd/mm/jj">
+      </label>
+      <label class="mt-3 w-1/2 -ml-px">
+        <span class="text-gray-700 uppercase text-xs">Departure</span>
+        <input class="form-input mt-1 block w-full text-gray-700 rounded-l-none" placeholder="dd/mm/jj">
+      </label>
+    </div>
+
+    <div class="flex">
+      <label class="mt-3 w-1/2">
+        <span class="text-gray-700 uppercase text-xs">Adults</span>
+        <select class="mt-1 form-select block w-full text-gray-700">
+          <option disabled selected>1 adult</option>
+          <option *ngFor="let number of adults" [value]="number">{{ number }} adults</option>
+        </select>
+      </label>
+      <label class="mt-3 w-1/2 -ml-px">
+        <span class="text-gray-700 uppercase text-xs">Kids</span>
+        <select class="mt-1 form-select block w-full text-gray-700">
+          <option disabled selected>1 child</option>
+          <option *ngFor="let number of children" [value]="number">{{ number }} children</option>
+        </select>
+      </label>
+    </div>
   </div>
 </div>
