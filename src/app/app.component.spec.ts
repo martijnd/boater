@@ -5,12 +5,15 @@ import {HeaderComponent} from './header/header.component';
 import {BoatSelectionComponent} from './boat-selection/boat-selection.component';
 import {SelectionCardComponent} from './boat-selection/selection-card/selection-card.component';
 import {DiscoverSectionComponent} from './discover-section/discover-section.component';
+import {DiscoverCardComponent} from './discover-section/discover-card/discover-card.component';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule],
-      declarations: [AppComponent, HeaderComponent, BoatSelectionComponent, SelectionCardComponent, DiscoverSectionComponent]
+      declarations: [
+        AppComponent, HeaderComponent, BoatSelectionComponent, SelectionCardComponent, DiscoverSectionComponent, DiscoverCardComponent
+      ]
     }).compileComponents();
   }));
 

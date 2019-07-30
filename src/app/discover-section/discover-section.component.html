@@ -1,6 +1,8 @@
-<div class="container p-12">
-  <h2>Discover boater</h2>
-  <div class="card-list ">
-
+<div class="flex justify-center">
+  <div class="container p-6">
+    <h2 class="mx-3">Discover boater</h2>
+    <div class="card-list mt-4 flex overflow-x-auto">
+      <app-discover-card *ngFor="let card of cards" [card]="card"></app-discover-card>
+    </div>
   </div>
 </div>

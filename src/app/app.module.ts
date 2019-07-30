@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { BoatSelectionComponent } from './boat-selection/boat-selection.component';
 import { SelectionCardComponent } from './boat-selection/selection-card/selection-card.component';
 import { DiscoverSectionComponent } from './discover-section/discover-section.component';
+import { DiscoverCardComponent } from './discover-section/discover-card/discover-card.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DiscoverSectionComponent } from './discover-section/discover-section.co
     HeaderComponent,
     BoatSelectionComponent,
     SelectionCardComponent,
-    DiscoverSectionComponent
+    DiscoverSectionComponent,
+    DiscoverCardComponent
   ],
   imports: [
     BrowserModule,

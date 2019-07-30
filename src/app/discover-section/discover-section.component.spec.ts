@@ -1,6 +1,7 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { DiscoverSectionComponent } from './discover-section.component';
+import {DiscoverSectionComponent} from './discover-section.component';
+import {DiscoverCardComponent} from './discover-card/discover-card.component';
 
 describe('DiscoverSectionComponent', () => {
   let component: DiscoverSectionComponent;
@@ -8,9 +9,9 @@ describe('DiscoverSectionComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiscoverSectionComponent ]
+      declarations: [DiscoverSectionComponent, DiscoverCardComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
