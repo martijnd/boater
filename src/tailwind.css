@@ -2,4 +2,8 @@
 
 @tailwind components;
 
+h2 {
+  @apply font-medium text-2xl antialiased;
+}
+
 @tailwind utilities;

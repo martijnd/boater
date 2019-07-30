@@ -22,8 +22,8 @@ export class SelectionCardComponent implements OnInit {
     }
   ];
 
-  adults = Array(8).fill(0).map((x, i) => 8 - i);
-  children = Array(8).fill(0).map((x, i) => 8 - i);
+  adults = Array(7).fill(1).map((x, i) => i + 2);
+  children = Array(7).fill(1).map((x, i) => i + 2);
 
   constructor() {
   }

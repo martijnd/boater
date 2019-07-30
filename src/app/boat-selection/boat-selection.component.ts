@@ -6,7 +6,7 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./boat-selection.component.scss']
 })
 export class BoatSelectionComponent implements OnInit {
-  backgroundImageUrl = 'url(assets/img/boat-selection.jpg)';
+  backgroundImageUrl = 'url(assets/img/boat-selection.jpg) no-repeat center center fixed';
 
   constructor() {
   }
